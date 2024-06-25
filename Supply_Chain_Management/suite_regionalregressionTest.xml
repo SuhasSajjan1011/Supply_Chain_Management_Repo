@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.comcast.scm.hometest.CreateCategory">
+      <methods>
+		  <include name="CreateCategory"/>
+	  </methods>
+      </class>
+      <class name="com.comcast.scm.hometest.CreateProductIntegrationTest"/>
+      <class name="com.comcast.scm.hometest.CreateManufacturerIntegrationTest"/>
+      <class name="com.comcast.scm.hometest.CreateCategoryWithDescription"/>
+      <class name="com.comcast.scm.hometest.DeleteCategory">
+      <methods>
+		  <include name="DeleteCategory"/>
+	  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
